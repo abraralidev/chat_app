@@ -1,3 +1,6 @@
+import 'package:chat_app/screens/chat_screen.dart';
+import 'package:chat_app/screens/login_screen.dart';
+import 'package:chat_app/screens/registration_screen.dart';
 import 'package:chat_app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +18,13 @@ class ChatApp extends StatelessWidget {
           bodyText1: TextStyle(color: Colors.black54),
         ),
       ),
-      home: const WelcomeScreen(),
+      initialRoute: 'WelcomeScreen',
+    routes: {
+      'WelcomeScreen':(context) => const WelcomeScreen(),
+      'LoginScreen':(context) => const LoginScreen(),
+      'RegistrationScreen':(context) => const RegistrationScreen(),
+      'ChatScreen':(context) => const ChatScreen(),
+    },
     );
   }
 }
