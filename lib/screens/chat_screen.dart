@@ -1,7 +1,6 @@
-// ignore_for_file: deprecated_member_use
-
-import 'package:flutter/material.dart';
 import 'package:chat_app/constants.dart';
+import 'package:flutter/material.dart';
+
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({Key? key}) : super(key: key);
@@ -44,6 +43,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       decoration: kMessageTextFieldDecoration,
                     ),
                   ),
+                  // ignore: deprecated_member_use
                   FlatButton(
                     onPressed: () {
                       //Implement send functionality.

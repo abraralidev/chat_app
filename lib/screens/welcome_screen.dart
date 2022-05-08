@@ -19,7 +19,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Row(
-              children: [
+              children: <Widget>[
                 SizedBox(
                   child: Image.asset('images/logo.png'),
                   height: 60.0,
@@ -27,7 +27,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 const Text(
                   'Flash Chat',
                   style: TextStyle(
-                    color: Colors.black,
                     fontSize: 45.0,
                     fontWeight: FontWeight.w900,
                   ),
@@ -45,7 +44,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 borderRadius: BorderRadius.circular(30.0),
                 child: MaterialButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, 'LoginScreen');
+                    //Go to login screen.
                   },
                   minWidth: 200.0,
                   height: 42.0,
@@ -62,7 +61,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 borderRadius: BorderRadius.circular(30.0),
                 elevation: 5.0,
                 child: MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    //Go to registration screen.
+                  },
                   minWidth: 200.0,
                   height: 42.0,
                   child: const Text(
